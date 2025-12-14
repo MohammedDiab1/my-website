@@ -29,8 +29,8 @@ const Projects = () => {
             description: "A neurosymbolic framework combining ontologies, logical rules, and LLM-based planners for real-time failure detection and recovery in robotics. Published at IROS 2024.",
             tags: ["Neuro-Symbolic", "LLM", "Ontologies", "IROS 2024"],
             videoId: null,
-            localVideo: `${import.meta.env.BASE_URL}recover_video.mp4`,
-            image: `${import.meta.env.BASE_URL}bipedal_robot.png`, // Fallback/Poster
+            localVideo: "/my-website/recover_video.mp4",
+            image: "/my-website/bipedal_robot.png", // Fallback/Poster
             links: {
                 demo: "https://recover-ontothor.github.io/",
                 code: "https://arxiv.org/abs/2404.00756"
@@ -43,7 +43,7 @@ const Projects = () => {
             description: "A skill-based robotic manipulation framework integrating perception and reasoning to enable robots to perform complex tasks. Focuses on learning manipulation skills like pick-up, put-down, and open-drawer.",
             tags: ["Manipulation", "Perception", "Task Planning", "Skills"],
             videoId: "LxHj8P5dQLo",
-            image: `${import.meta.env.BASE_URL}tiago_yumi.png`,
+            image: "/my-website/tiago_yumi.png",
             links: {
                 demo: "https://www.sciencedirect.com/science/article/abs/pii/S0921889020304930",
                 code: "https://www.sciencedirect.com/science/article/abs/pii/S0921889020304930"
@@ -56,7 +56,7 @@ const Projects = () => {
             description: "An ontology-based knowledge processing framework for autonomous robotics. Provides semantic linking of perception data with high-level knowledge for enhanced task and motion planning.",
             tags: ["Ontologies", "Knowledge Processing", "TAMP", "IEEE-1872"],
             videoId: "XDm75rm2FzM",
-            image: `${import.meta.env.BASE_URL}kinova_baxter.png`,
+            image: "/my-website/kinova_baxter.png",
             links: {
                 demo: "https://www.mdpi.com/1424-8220/19/5/1166",
                 code: "https://www.mdpi.com/1424-8220/19/5/1166"
@@ -69,7 +69,7 @@ const Projects = () => {
             description: "Trust-Inferring Infrastructure for Cognitive Knowledge (TICK) - A knowledge processing infrastructure for assessing and building trust in HRI through multimodal sensing and reasoning.",
             tags: ["HRI", "Trust", "Cognitive", "Multimodal"],
             videoId: "S2WX9fyk124",
-            image: `${import.meta.env.BASE_URL}tick_trust.png`,
+            image: "/my-website/tick_trust.png",
             links: {
                 demo: "https://link.springer.com/article/10.1007/s12369-024-01206-1",
                 code: "https://link.springer.com/article/10.1007/s12369-024-01206-1"
@@ -82,7 +82,7 @@ const Projects = () => {
             description: "Research on transfer learning techniques for robotic manipulation tasks, enabling efficient skill acquisition across different domains.",
             tags: ["Transfer Learning", "Robotics", "Machine Learning"],
             videoId: "F12ZKlUG9TY",
-            image: `${import.meta.env.BASE_URL}transfer_learning.png`,
+            image: "/my-website/transfer_learning.png",
             links: {
                 demo: "https://link.springer.com/article/10.1007/s10458-024-09653-w",
                 code: "https://link.springer.com/article/10.1007/s10458-024-09653-w"
@@ -95,7 +95,7 @@ const Projects = () => {
             description: "Contribution to the IEEE Standard for Ontologies for Robotics and Automation, defining core concepts for knowledge representation in robotics.",
             tags: ["IEEE Standard", "Ontology", "Robotics", "Automation"],
             videoId: null,
-            image: `${import.meta.env.BASE_URL}bipedal_robot.png`,
+            image: "/my-website/bipedal_robot.png",
             links: {
                 demo: "https://ieeexplore.ieee.org/document/9535344",
                 code: "https://ieeexplore.ieee.org/document/9535344"
