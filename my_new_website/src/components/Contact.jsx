@@ -44,7 +44,7 @@ const Contact = () => {
 
                         <div className="social-links">
                             <a href="https://github.com/" target="_blank" rel="noopener noreferrer" className="social-icon"><FaGithub /></a>
-                            <a href="https://linkedin.com/" target="_blank" rel="noopener noreferrer" className="social-icon"><FaLinkedin /></a>
+                            <a href="https://www.linkedin.com/in/mohammed-diab-5b8312152/" target="_blank" rel="noopener noreferrer" className="social-icon"><FaLinkedin /></a>
                             <a href="https://twitter.com/" target="_blank" rel="noopener noreferrer" className="social-icon"><FaTwitter /></a>
                         </div>
                     </motion.div>
