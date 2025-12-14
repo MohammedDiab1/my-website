@@ -4,6 +4,19 @@ import { FaEnvelope, FaLinkedin, FaTwitter, FaGithub } from 'react-icons/fa';
 import './Contact.css';
 
 const Contact = () => {
+    const handleContactSubmit = (e) => {
+        e.preventDefault();
+        const formData = new FormData(e.target);
+        const name = formData.get('name');
+        const email = formData.get('email');
+        const message = formData.get('message');
+
+        const subject = `Contact from Website: ${name}`;
+        const body = `${message}\n\nFrom: ${name} (${email})`;
+
+        window.location.href = `mailto:m.diab.phd@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+    };
+
     return (
         <section id="contact" className="section contact-section">
             <div className="container">
@@ -55,7 +68,7 @@ const Contact = () => {
                         whileInView={{ opacity: 1, x: 0 }}
                         viewport={{ once: true }}
                         transition={{ duration: 0.5, delay: 0.4 }}
-                        onSubmit={(e) => e.preventDefault()}
+                        onSubmit={handleContactSubmit}
                     >
                         <div className="form-group">
                             <label htmlFor="name">Name</label>
