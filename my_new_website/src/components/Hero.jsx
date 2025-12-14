@@ -92,7 +92,7 @@ const Hero = () => {
                     >
                         <div className="image-wrapper">
                             <div className="image-glow"></div>
-                            <img src="/profile.jpg" alt="Mohammed Diab" className="profile-image" />
+                            <img src={`${import.meta.env.BASE_URL}profile.jpg`} alt="Mohammed Diab" className="profile-image" />
                         </div>
                     </motion.div>
                 </motion.div>
