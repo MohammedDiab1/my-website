@@ -4,18 +4,6 @@ import { FaEnvelope, FaLinkedin, FaTwitter, FaGithub } from 'react-icons/fa';
 import './Contact.css';
 
 const Contact = () => {
-    const handleContactSubmit = (e) => {
-        e.preventDefault();
-        const formData = new FormData(e.target);
-        const name = formData.get('name');
-        const email = formData.get('email');
-        const message = formData.get('message');
-
-        const subject = `Contact from Website: ${name}`;
-        const body = `${message}\n\nFrom: ${name} (${email})`;
-
-        window.location.href = `mailto:m.diab.phd@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
-    };
 
     return (
         <section id="contact" className="section contact-section">
@@ -68,8 +56,12 @@ const Contact = () => {
                         whileInView={{ opacity: 1, x: 0 }}
                         viewport={{ once: true }}
                         transition={{ duration: 0.5, delay: 0.4 }}
-                        onSubmit={handleContactSubmit}
+                        action="https://formsubmit.co/m.diab.phd@gmail.com"
+                        method="POST"
                     >
+                        <input type="hidden" name="_subject" value="New submission from your website!" />
+                        <input type="hidden" name="_captcha" value="false" />
+
                         <div className="form-group">
                             <label htmlFor="name">Name</label>
                             <input type="text" id="name" name="name" placeholder="Your Name" required />
