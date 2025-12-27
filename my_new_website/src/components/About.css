@@ -1,5 +1,7 @@
 .about-section {
     background-color: var(--bg-secondary);
+    position: relative;
+    overflow: hidden;
 }
 
 .about-content {
@@ -7,6 +9,8 @@
     grid-template-columns: 1fr 1fr;
     gap: 4rem;
     align-items: start;
+    position: relative;
+    z-index: 1;
 }
 
 .about-text p {

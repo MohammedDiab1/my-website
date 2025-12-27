@@ -1,6 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { FaUniversity, FaRobot, FaGraduationCap, FaBriefcase } from 'react-icons/fa';
+import CircuitBoard from './CircuitBoard';
 import './About.css';
 
 const About = () => {
@@ -90,6 +91,7 @@ const About = () => {
 
     return (
         <section id="about" className="section about-section">
+            <CircuitBoard />
             <div className="container">
                 <motion.h2
                     className="section-title"

@@ -1,6 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { Link } from 'react-scroll';
+import NeuralNetwork from './NeuralNetwork';
 import './Hero.css';
 
 const Hero = () => {
@@ -36,9 +37,7 @@ const Hero = () => {
     return (
         <section id="home" className="hero-section">
             <div className="hero-bg">
-                <div className="floating-shape shape-1"></div>
-                <div className="floating-shape shape-2"></div>
-                <div className="floating-shape shape-3"></div>
+                <NeuralNetwork />
             </div>
             <div className="container hero-container">
                 <motion.div
@@ -55,7 +54,7 @@ const Hero = () => {
                             Hello, I'm
                         </motion.h2>
                         <motion.h1
-                            className="hero-name"
+                            className="hero-name glow-text"
                             variants={itemVariants}
                         >
                             Mohammed Diab<span className="dot">.</span>
